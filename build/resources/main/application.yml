@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    database: POSTGRESQL
+  flyway:
+    baseline-on-migrate: true
+    validate-on-migrate: true
+  cloud:
+    aws:
+      credentials:
+        access-key: AKIA5OIFYUZ5LWWWFNM4
+        secret-key: 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
+      region:
+        static: us-east-2
+      stack:
+        auto: false
